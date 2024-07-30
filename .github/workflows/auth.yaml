@@ -1,0 +1,10 @@
+name: Authenticate to Google Cloud
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: 'google-github-actions/auth@v2.1.3'
+        with:
+          credentials_json: '${{ secrets.bananasplit }}'
