@@ -22,4 +22,4 @@ jobs:
         run: 'gcloud config set run/region us-central1'
 
       - name: 'Run rookiespaymentapp'
-        run: 'gcloud run deploy rookiespaymentapp --source . --allow-unauthenticated'
+        run: 'gcloud run deploy rookiespaymentapp --source . '
